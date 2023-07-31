@@ -29,29 +29,31 @@ URL Regex:
     /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
     
 ### Anchors
-All regexes begin and end with a forward slash: / <i>regex here</i> /
-The anchors within tell you where the regex string starts and ends.
+All regexes begin and end with a forward slash: / <i>regex here</i> /.  
+The anchors within tell you where the regex string starts and ends.  
 The caret ^ signifies the beginning, and the dollar sign $ signifies the end.
 
 ### Quantifiers * + ? {n} {n, } {n, x} 
 
-https? -the's' can either be present or not, since URLs can begin with 'http' or 'https'. 
+https?   
+The's' can either be present or not, since URLs can begin with 'http' or 'https'. 
 
-\? -the match of (https?:\/\/) can either be present or not, since many URLs are written without the opening 'http://' or 'https://'. 
+\?  
+The match of (https?:\/\/) can either be present or not, since many URLs are written without the opening 'http://' or 'https://'. 
 
-[\da-z\.-]+ 
+[\da-z\.-]+  
 The string [\da-z\.-] must have at least 1 or more matching characters. 
 
-[a-z\.]{2,6} 
+[a-z\.]{2,6}   
 The characters in the bracket can be matched a minimum of 2 times, up to a maximum of 6 times.
 
-[\/\w \.-]* 
+[\/\w \.-]*  
 The characters in the bracket: can either be present or not, since URLs are not all the same length.
 
-([\/\w \.-]*)* 
+([\/\w \.-]*)*   
 The entire bracket expression ([\/\w \.-]*)* can either be present or not, for the same reason.
 
-\/? 
+\/?   
 There could be one forward slash at the end of the URL, or there could be none. 
 
 ### OR Operator |
@@ -70,25 +72,22 @@ Parentheses designate groups of characters to match exactly, so the first needs 
 
 #### Literal Characters
 
-    - when the appears outside of parentheses or brackets, it must be present at that point in the string to match as a URL. 
-
-\. - This '.' turns from a quantifier into a literal character, when preceded by the '\' . 
-
+\. - The period turns from a quantifier into a literal character when preceded by the '\' . 
 
 ### Flags
-There are no flags in this regex
+There are no flags in this regex.
 
 ### Grouping and Capturing ('string') ('?:')
 There are no capturing groups in this regex. The groups above, in **Meta Characters**, are non-capturing.
 
 ### Bracket Expressions ['string']
-[\da-z\.-]+ 
+[\da-z\.-]+   
 Matches any combination of numbers from 0-9, lower-case letters from a-z, periods, and dashes.
 
-[a-z\.]
+[a-z\.]  
 Matches any combination of lower-case letters from a-z and periods.
 
-[\/\w \.-]
+[\/\w \.-]  
 Matches any combination of forward slashes, upper- and lower-case letters from a-z, numbers from 0-9, and underscores.
 
 ### Greedy and Lazy Match
@@ -104,8 +103,8 @@ There are no back-references in this regex.
 There are no look-aheads or look-behinds in this regex.
 
 ## Author
-Marlena Hooker Moore
-Colorado, USA
-https://github.com/Ms-Marlena
+Marlena Hooker Moore  
+Colorado, USA  
+https://github.com/Ms-Marlena  
 
 
