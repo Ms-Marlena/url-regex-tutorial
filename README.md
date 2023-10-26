@@ -1,6 +1,6 @@
 # url-regex-tutorial
 
-##Summary
+## Summary
 
 A regex (short for "regular expression") is a pattern written in a specific way to assist with searching for text that follows a certain pattern or format. In addition to searches, regexes provide a way to verify whether user entries on a web page are formatted correctly, or contain the correct composition of characters.
 
